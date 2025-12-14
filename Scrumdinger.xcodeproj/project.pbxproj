@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E80D46892EECCC1100275241 /* ThemeKit in Frameworks */ = {isa = PBXBuildFile; productRef = E80D46882EECCC1100275241 /* ThemeKit */; };
 		E80D46C42EEE08C400275241 /* TimerKit in Frameworks */ = {isa = PBXBuildFile; productRef = E80D46C32EEE08C400275241 /* TimerKit */; };
+		E80D46E22EEF636600275241 /* TranscriptionKit in Frameworks */ = {isa = PBXBuildFile; productRef = E80D46E12EEF636600275241 /* TranscriptionKit */; };
+		E80D46E52EEF63C400275241 /* TimerKit in Frameworks */ = {isa = PBXBuildFile; productRef = E80D46E42EEF63C400275241 /* TimerKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E80D46892EECCC1100275241 /* ThemeKit in Frameworks */,
+				E80D46E52EEF63C400275241 /* TimerKit in Frameworks */,
 				E80D46C42EEE08C400275241 /* TimerKit in Frameworks */,
+				E80D46E22EEF636600275241 /* TranscriptionKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +78,8 @@
 			packageProductDependencies = (
 				E80D46882EECCC1100275241 /* ThemeKit */,
 				E80D46C32EEE08C400275241 /* TimerKit */,
+				E80D46E12EEF636600275241 /* TranscriptionKit */,
+				E80D46E42EEF63C400275241 /* TimerKit */,
 			);
 			productName = Scrumdinger;
 			productReference = E8A82CFE2EECC68C001A18DC /* Scrumdinger.app */;
@@ -105,7 +111,8 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				E80D46872EECCC1100275241 /* XCLocalSwiftPackageReference "ThemeKit" */,
-				E80D46C22EEE08C400275241 /* XCLocalSwiftPackageReference "../../../Downloads/ManagingStateAndLifeCycle/StartingProject/TutorialResources/TimerKit" */,
+				E80D46E02EEF636600275241 /* XCLocalSwiftPackageReference "TranscriptionKit" */,
+				E80D46E32EEF63C400275241 /* XCLocalSwiftPackageReference "TimerKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E8A82CFF2EECC68C001A18DC /* Products */;
@@ -269,6 +276,8 @@
 				DEVELOPMENT_TEAM = 3F5P6JZC2Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +310,8 @@
 				DEVELOPMENT_TEAM = 3F5P6JZC2Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -351,9 +362,13 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ThemeKit;
 		};
-		E80D46C22EEE08C400275241 /* XCLocalSwiftPackageReference "../../../Downloads/ManagingStateAndLifeCycle/StartingProject/TutorialResources/TimerKit" */ = {
+		E80D46E02EEF636600275241 /* XCLocalSwiftPackageReference "TranscriptionKit" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../../Downloads/ManagingStateAndLifeCycle/StartingProject/TutorialResources/TimerKit;
+			relativePath = TranscriptionKit;
+		};
+		E80D46E32EEF63C400275241 /* XCLocalSwiftPackageReference "TimerKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = TimerKit;
 		};
 /* End XCLocalSwiftPackageReference section */
 
@@ -363,6 +378,14 @@
 			productName = ThemeKit;
 		};
 		E80D46C32EEE08C400275241 /* TimerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TimerKit;
+		};
+		E80D46E12EEF636600275241 /* TranscriptionKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TranscriptionKit;
+		};
+		E80D46E42EEF63C400275241 /* TimerKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TimerKit;
 		};
